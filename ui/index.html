@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corelytics - AI-powered email generation engine">
+    
+    <title>Corelytics — Promptless Mail</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!--  HEADER  -->
+    <header class="topbar">
+
+        <div class="brand">
+            <h1>Corelytics</h1>
+            <span>Promptless AI Communication Engine</span>
+        </div>
+
+        <div class="step-indicator">
+            <div class="step" id="step1">1. Domain</div>
+            <div class="step" id="step2">2. Recipient</div>
+            <div class="step" id="step3">3. Category</div>
+            <div class="step" id="step4">4. Scenario</div>
+        </div>
+
+    </header>
+
+    <!--  INTENT PREVIEW  -->
+    <div class="intent-preview">
+        <strong>Intent Path:</strong>
+        <span id="intentPath">None selected</span>
+    </div>
+
+    <!--  DOMAIN SECTION  -->
+    <section id="domainSection" class="section active">
+        <h3>Select Domain</h3>
+        <div id="domainOptions" class="bubble-container"></div>
+    </section>
+
+    <!--  RECIPIENT SECTION  -->
+    <section id="recipientSection" class="section">
+        <h3>Select Recipient</h3>
+        <div id="recipientOptions" class="bubble-container"></div>
+    </section>
+
+    <!--  CATEGORY SECTION  -->
+    <section id="categorySection" class="section">
+        <h3>Select Category</h3>
+        <div id="categoryOptions" class="bubble-container"></div>
+    </section>
+
+    <!--  SCENARIO SECTION  -->
+    <section id="scenarioSection" class="section">
+        <h3>Select Scenario</h3>
+        <div id="scenarioOptions" class="bubble-container"></div>
+    </section>
+
+    <!--  GENERATE BUTTON -->
+    <button id="generateBtn" disabled>
+        Generate Email
+    </button>
+
+    <!--  OUTPUT SECTION  -->
+    <div class="output-wrapper">
+
+        <div class="output-header">
+            <span class="output-title">Generated Draft</span>
+            <button id="copyBtn" title="Copy to clipboard">
+                Copy
+            </button>
+        </div>
+
+        <textarea
+            id="emailOutput"
+            placeholder="Your AI-generated email will appear here..."
+            readonly
+        ></textarea>
+
+    </div>
+
+</div>
+
+<!-- SCRIPTS  -->
+<script src="app.js"></script>
+
+</body>
+</html>
