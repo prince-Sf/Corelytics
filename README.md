@@ -146,17 +146,17 @@ curl -X POST http://127.0.0.1:8000/generate \
 ```
 ┌─────────────────────────────────────┐
 │   Frontend (Vanilla JS + CSS)       │
-│   - Beautiful interactive UI         │
-│   - 4-step wizard interface          │
+│   - Beautiful interactive UI        │
+│   - 4-step wizard interface         │
 └──────────────┬──────────────────────┘
                │ JSON Requests
 ┌──────────────▼──────────────────────┐
 │   FastAPI Backend (api.py)          │
 │   - 4 main endpoints                │
-│   - Dynamic taxonomy navigation      │
+│   - Dynamic taxonomy navigation     │
 └──────────────┬──────────────────────┘
                │
-┌──────────────▼─���────────────────────┐
+┌──────────────▼─���──────────────────┐
 │   Intent Engine + Compiler          │
 │   - core/intent_engine.py           │
 │   - core/prompt_compiler.py         │
