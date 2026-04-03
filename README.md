@@ -156,7 +156,7 @@ curl -X POST http://127.0.0.1:8000/generate \
 │   - Dynamic taxonomy navigation     │
 └──────────────┬──────────────────────┘
                │
-┌──────────────▼─���──────────────────┐
+┌──────────────▼──────────────────────┐
 │   Intent Engine + Compiler          │
 │   - core/intent_engine.py           │
 │   - core/prompt_compiler.py         │
